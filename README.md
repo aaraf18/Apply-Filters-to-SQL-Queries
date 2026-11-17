@@ -1,6 +1,12 @@
-# Apply Filters to SQL Queries
+# SQL for Security Investigations
 
----
+A SQL lab using login and employee records to investigate activity and identify machines for updates. Screenshots document the queries and their results.
+
+**Skills:** SQL, WHERE, AND, OR, NOT, LIKE
+
+## Project context
+
+This repository presents an educational exercise. References to organisations and incidents describe the exercise scenario, not professional employment or a client engagement.
 
 ## Project description
 
@@ -15,7 +21,7 @@ The following code demonstrates how I created a `SQL` query to filter for failed
 
 <img src="images/Step1.png" alt="Retrieve after hours failed login attempts" width="700" />
 
-In the screenshot you can see I used a `SQL` query to get the desired information from the `login_attempts` table. I also used the `WHERE` clause and `AND` operator to filter the information I need. I used two conditions to filter out my results according to my need. The first condition I used is `login_time > '18:00'`. Which only filter for the login attempts made after 18:00. The second condition is `success = 0`. Which filter for failed login attempts.
+In the screenshot you can see I used a `SQL` query to get the desired information from the `log_in_attempts` table. I also used the `WHERE` clause and `AND` operator to filter the information I need. I used two conditions to filter out my results according to my need. The first condition I used is `login_time > '18:00'`. Which only filter for the login attempts made after 18:00. The second condition is `success = 0`. Which filter for failed login attempts.
 
 ---
 
@@ -79,3 +85,5 @@ The query returns all employees not in the Information Technology department. Fi
 ## Summary
 
 I applied filters to `SQL` queries to get specific information on login attempts and employee machines. I used two different tables, `log_in_attempts` and `employees`. I used the `AND`, `OR`, and `NOT` operators to filter for the specific information needed for each task. I also used `LIKE` and the percentage sign (`%`) wildcard to filter for patterns.
+
+[Back to my portfolio](https://github.com/aaraf18)
